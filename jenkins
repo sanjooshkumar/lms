@@ -9,7 +9,7 @@ pipeline {
             }
         }
 
-        stage('Build LMS') {
+        stage('Build LMS app') {
             steps {
                 echo 'Building..'
                 sh 'cd webapp && npm install && npm run build'
